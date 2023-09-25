@@ -94,3 +94,6 @@ java.lang.NullPointerException: Cannot invoke "com.mysite.sbb.question.QuestionS
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
 위와 같은 trace 나옮**/
+
+//문제 원인: @SpringBootTest를 생략했다.
+//애플리케이션을 로컬의 포트 위에 올려서 테스트하는 부분이 빠졌으니 당연히 에러가 날 수밖에 없는 문제였다.
